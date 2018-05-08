@@ -10,8 +10,8 @@ public class In_exception {
 	}
 	
 	public void twoNumberDivider() {
+		Scanner keyboard = new Scanner(System.in);
 		try {
-			Scanner keyboard = new Scanner(System.in);
 			System.out.print("x: ");
 			this.x = keyboard.nextInt();
 			System.out.print("y: ");
@@ -26,6 +26,9 @@ public class In_exception {
 		}
 		catch(Exception e) {
 			System.out.println("Other error"+ e.getMessage());
+		}
+		finally {
+			keyboard.close();
 		}
 	}
 	public static void main(String args[]) {
