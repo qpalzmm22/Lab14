@@ -27,7 +27,7 @@ public class In_exception { //a class to find type mismatch exception and denomi
 		catch(Exception e) {	// if other any other exception was thrown
 			System.out.println("Other error"+ e.getMessage());	// print the following
 		}
-		finally {	// after all
+		finally {	// after all the exception handling
 			keyboard.close(); // close the keyword for safety
 		}
 	}
