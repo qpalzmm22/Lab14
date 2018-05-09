@@ -27,6 +27,7 @@ public class Powercalc {	// checks for two exceptions and throws it when found
 				System.out.println(e);	// print that exception
 			}
 		}
+		keyboard.close(); // close keyboard for safety
 	}
 
 }
